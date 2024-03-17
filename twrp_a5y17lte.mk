@@ -14,14 +14,15 @@
 # limitations under the License.
 #
 
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+# Inherit from common AOSP config
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common TWRP stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_DEVICE := a5y17lte
-PRODUCT_NAME := omni_a5y17lte
+PRODUCT_NAME := twrp_a5y17lte
 PRODUCT_MODEL := Galaxy A5(2017)
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung

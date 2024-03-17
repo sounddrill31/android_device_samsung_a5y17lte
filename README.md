@@ -30,5 +30,5 @@ git clone -b android-9.0 https://github.com/teamwin/android_device_samsung_a5y17
 ```
 3. To build:
 ```bash
-export ALLOW_MISSING_DEPENDENCIES=true && . build/envsetup.sh && lunch omni_a5y17lte-eng && mka recoveryimage -j128
+export ALLOW_MISSING_DEPENDENCIES=true && . build/envsetup.sh && lunch twrp_a5y17lte-eng && mka recoveryimage -j128
 ```

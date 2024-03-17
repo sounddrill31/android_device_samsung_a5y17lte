@@ -56,3 +56,5 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 -
 # Include
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
+# Disable 64 bit
+TARGET_SUPPORTS_64_BIT_APPS := false
